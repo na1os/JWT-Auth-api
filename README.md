@@ -1,6 +1,6 @@
 # Auth API
 I kept writing the same register/login/reset boilerplate for every side project, so I pulled it into one service I can point any app at. PHP 8 with MySQL, no framework: just PDO, a hand rolled HS256 JWT helper, and PHPMailer for the emails. It is not a framework; it is about twenty small files you can read in one sitting.
-## demo [here](mihai.xyz)
+## demo [here](https://mihai.xyz)
 
 The idea: put it on a subdomain (for example api.example.com), call it from wherever (web apps, Discord bots, scripts), and stop reimplementing accounts.
 
