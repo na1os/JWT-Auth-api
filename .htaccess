@@ -1,0 +1,8 @@
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+<FilesMatch "^config\.php$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^helpers/ - [F]
